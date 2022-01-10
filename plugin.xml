@@ -21,11 +21,15 @@
             </feature>
         </config-file>
 
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET" />
+        </config-file>
+
         <source-file src="src/android/PDFGenerator.java" target-dir="src/com/pdf/generator/"/>
         <source-file src="src/android/PDFPrinter.java" target-dir="src/com/pdf/generator/"/>
         <source-file src="src/android/PDFPrinterWebView.java" target-dir="src/com/pdf/generator/"/>
-        <source-file src="src/android/PDFtoBase64.java" target-dir="src/com/pdf/generator/"/>
-        <source-file src="src/android/PDFConfig.java" target-dir="src/com/pdf/generator/"/>
+        <source-file src="src/android/PDFtoBase64.java" target-dir="src/android/print/"/>
+        <source-file src="src/android/PDFConfig.java" target-dir="src/android/print/"/>
 
     </platform>
 
